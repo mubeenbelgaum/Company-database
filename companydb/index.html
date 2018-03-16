@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>
+            MySql
+        </title>
+   </head>
+
+
+ <body>
+      <div style="text-align:center":>
+          <b>MySql</b>
+      </div>
+
+
+  <p>
+    Database creation
+  </p>
+      <b>
+        CREATE DATABASE Company;
+      </b>
+
+  <p>
+    Table creation
+  </p>
+
+    <b>
+      CREATE TABLE Employee(<br />
+    Eid int NOT NULL PRIMARY KEY,<br />
+    Ename varchar(25) NOT NULL,<br />
+    Dob date,<br />
+    Contact varchar(12) NOT NULL,<br />
+    Emailid varchar(50) NOT NULL,<br />
+    Address varchar(100),<br />
+    DOJ date,<br />
+    Salary int);<br />
+  </b>
+
+  <div style="margin-top:50px">
+      <div style="text-align:center">
+        <p>Table structure</p>
+          <img src="table_structure.png"></img>
+        </div>
+  </div>
+
+  <div style="margin-top:50px">
+    <div style="text-align:center">
+      <h2>CRUD Operations</h2>
+    </div>
+
+    <div style="margin-top:50px">
+      <p>
+        Inserting values into Employee table
+      </p>
+    </div>
+      <b>
+      1.  Insert into Employee<br />
+        values
+        ('1001', 'Mubeen', '1994-08-15', '7795250217', 'mubeenbelgaum890@gmail.com', 'Rasulpoor street Dharwad', '2018-03-12', 20000);
+      </b>
+
+
+      <div style="margin-top:50px">
+        <b>2.Insert into Employee<br />
+          values(1002,"Seema","1995-03-07","8956231470","seema@gmail.com","Navnagar","2018-03-12",20000);</p>
+        </b>
+      </div>
+
+      <div style="margin-top:50px">
+          <b>3.
+            Insert into Employee<br />
+            values
+            (1003,"John","1995-03-07","9856320147","john147@gmail.com","London","2015-03-10",30000);
+            </b>
+        </div>
+
+        <div style="margin-top:50px">
+            <b>4.
+              Insert into Employee<br />
+              values
+              (1004,"Arshad","1993-02-13","9693320147","arshad79@gmail.com","Delhi","2017-08-10",15000);
+            </b>
+          </div>
+
+          <div style="margin-top:50px">
+            <div style="text-align:center">
+              <p>Inserted records table</p>
+            </div>
+
+            <div style="text-align:center">
+              <img src="insert_records.png">
+            </div>
+        </div>
+
+        <div style="margin-top:50px">
+          <p>
+            Updating a record in table
+          </p>
+        </div>
+          <b>
+            Update Employee
+            set Contact="9886697376" where Ename="John";
+          </b>
+
+
+<div style="margin-top:50px">
+  <div style="text-align:center">
+    <p>Updated record table</p>
+  </div>
+
+<div style="text-align:center">
+
+<img src=update_record.png>
+</div>
+</div>
+
+
+
+<div style="margin-top:50px">
+<p>Deleting record from Table</p>
+</div>
+<b>
+  Delete from Employee
+  where Ename="Arshad";
+</b>
+
+<div style="margin-top:50px">
+  <div style="text-align:center">
+    <p>Deleted record table</p>
+  </div>
+
+<div style="text-align:center">
+
+<img src=delete_record.png>
+</div>
+</div>
+
+<div style="margin-top:100px">
+  CRUD Operations completed
+</div>
+
+</body>
+
+</html>
